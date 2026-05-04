@@ -47,7 +47,7 @@ For Android emulator:
 flutter devices
 flutter run
 ```
-<img width="1919" height="1011" alt="image" src="https://github.com/user-attachments/assets/40d4c4d6-8c3f-4fcc-8d78-6ab1708a3f80" />
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/6afa3084-930e-4668-be38-29071f3bfb22" />
 
 How the App Works
 
@@ -63,7 +63,8 @@ Add a new transaction
 Edit existing transaction information
 Delete transactions
 Search and filter transactions
-<img width="1919" height="1010" alt="image" src="https://github.com/user-attachments/assets/cb35ef73-c8d6-4c44-853f-c325aea238d3" />
+
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/3919c128-ec5d-4e72-ba2b-4fcba313194f" />
 
 Bloc is used to manage the application state
 This means all actions such as loading, adding, editing, deleting, searching, and filtering are controlled through Bloc events and states
