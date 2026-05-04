@@ -1,17 +1,67 @@
-# zen_spend_app
+# Zen Spend
 
-A new Flutter project.
+Modern personal finance tracker for Flutter course.
 
-## Getting Started
+Requirements covered:
+- Dart + Flutter
+- Bloc state management
+- Backend request: DummyJSON products API for starter transactions
+- Master page: transaction list/dashboard
+- View page: transaction details
+- Add transaction
+- Edit transaction
+- Delete transaction
+- Local saving with SharedPreferences
+- Search and filters
 
-This project is a starting point for a Flutter application.
+## Main Features
 
-A few resources to get you started if this is your first Flutter project:
+- View all transactions
+- Add a new income or expense
+- Edit transaction details
+- Delete transactions
+- Search transactions by title or category
+- Filter transactions by:
+    - All
+    - Income
+    - Expense
+- Save transactions locally using SharedPreferences
+- Load initial data from backend API
+- Modern Gen Z style user interface
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Run:
+```powershell
+flutter create zen_spend_app
+```
+Then replace `pubspec.yaml` and `lib/main.dart` with files from this zip
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```powershell
+cd C:\zen_spend_app
+flutter clean
+flutter pub get
+flutter run -d chrome
+```
+
+For Android emulator:
+```powershell
+flutter devices
+flutter run
+```
+
+How the App Works
+
+When the app starts, it sends a request to the DummyJSON backend
+The received data is transformed into finance transactions
+
+Users can then:
+
+See total balance, income, and expenses
+View a list of transactions
+Open each transaction to see details
+Add a new transaction
+Edit existing transaction information
+Delete transactions
+Search and filter transactions
+
+Bloc is used to manage the application state
+This means all actions such as loading, adding, editing, deleting, searching, and filtering are controlled through Bloc events and states
